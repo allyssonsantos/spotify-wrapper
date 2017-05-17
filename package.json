@@ -1,7 +1,7 @@
 {
-  "name": "js-tdd",
+  "name": "spotify-wrapper",
   "version": "1.0.0",
-  "description": "Biblioteca do curso de js com tdd na pratica",
+  "description": "A wrapper to work with the Spotify Web API.",
   "main": "index.js",
   "scripts": {
     "lint": "./node_modules/.bin/eslint src/*.js",
@@ -14,12 +14,17 @@
     "functions": 80,
     "lines": 80,
     "check-coverage": true,
-    "reporter": ["text", "html"],
-    "exclude": ["tests/**"]
+    "reporter": [
+      "text",
+      "html"
+    ],
+    "exclude": [
+      "tests/**"
+    ]
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/allyssonsantos/js-tdd-pratica.git"
+    "url": "git+https://github.com/allyssonsantos/spotify-wrapper.git"
   },
   "keywords": [
     "js",
@@ -29,9 +34,9 @@
   "author": "Allysson dos Santos <aallysson0@gmail.com> (http://allysson.me/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/allyssonsantos/js-tdd-pratica/issues"
+    "url": "https://github.com/allyssonsantos/spotify-wrapper/issues"
   },
-  "homepage": "https://github.com/allyssonsantos/js-tdd-pratica#readme",
+  "homepage": "https://github.com/allyssonsantos/spotify-wrapper#readme",
   "devDependencies": {
     "babel-preset-env": "^1.4.0",
     "babel-register": "^6.24.1",
@@ -43,6 +48,10 @@
     "eslint-plugin-react": "^6.4.1",
     "husky": "^0.11.9",
     "mocha": "^3.3.0",
-    "nyc": "^10.3.2"
+    "node-fetch": "^1.6.3",
+    "nyc": "^10.3.2",
+    "sinon": "^2.2.0",
+    "sinon-chai": "^2.10.0",
+    "sinon-stub-promise": "^4.0.0"
   }
 }
