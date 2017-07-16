@@ -11,7 +11,10 @@
   <script src="../dist/spotify-wrapper.umd.js"></script>
 
   <script>
-    const albums = spotifyWrapper.searchAlbums('Buckethead');
+    const spotify = new SpotifyWrapper({
+      token: 'BQCaLI-QLCDpt6n0vhmUa85sjawMRULfAsWfpYG08wjLORrR1lL-4tb1ckzUwG_is7-3aicQkqi6jbOwe9ujaZe8Lcf3JoJX9uP0MvX6WrgKlKL_jlTg56eMN4lJt1bvjDjCIxPskD6B'
+    });
+    const albums = spotify.search.albums('Buckethead');
     const albumsEl = document.getElementById('albums');
 
     albums.then(data => {
